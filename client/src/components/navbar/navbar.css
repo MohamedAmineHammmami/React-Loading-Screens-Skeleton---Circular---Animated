@@ -1,10 +1,15 @@
 .navbar {
-  background-color: rgb(20, 20, 20);
+  background-color: rgb(34, 33, 31);
+  height: 9.5vh;
+  width: 100vw;
+  position: fixed;
   color: white;
-  padding: 0.5rem 3rem 0.5rem 2rem;
+  padding: 0.7rem 3rem 0.7rem 2rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  box-sizing: border-box;
+  z-index: 1;
 }
 
 .logo {

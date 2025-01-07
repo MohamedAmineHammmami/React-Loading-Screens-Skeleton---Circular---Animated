@@ -1,0 +1,23 @@
+.sidebarContainer {
+  width: 12vw;
+  height: 100vh;
+  background-color: rgb(34, 33, 31);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 3rem;
+  font-family: roboto;
+  font-weight: 700;
+  padding: 2rem 0 0 1rem;
+  box-sizing: border-box;
+  top: 9vh;
+  position: fixed;
+}
+
+.sidebarContainer div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}

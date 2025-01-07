@@ -1,0 +1,60 @@
+.postContainer {
+  width: 20vw;
+  height: 37vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.postThumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.duration span {
+  position: absolute;
+  background-color: rgb(53, 53, 53, 0.9);
+  color: white;
+  right: 0.5rem;
+  top: 53%;
+  padding: 0.1rem 0.2rem 0.1rem 0.2rem;
+}
+
+.postMetaContainer {
+  display: flex;
+  gap: 1rem;
+  font-family: roboto;
+  padding-left: 0.5rem;
+}
+
+.chanelLogo {
+  width: 2.7rem;
+  height: 2.7rem;
+  border-radius: 50%;
+}
+
+.chanelLogo img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.postDesc {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  width: 80%;
+}
+
+.postDesc h2 {
+  color: white;
+  font-weight: 450;
+}
+
+.postDesc p {
+  color: gray;
+  width: 100%;
+}
