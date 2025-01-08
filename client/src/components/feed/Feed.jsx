@@ -2,16 +2,21 @@ import React, { useEffect, useState } from "react";
 import "./feed.css";
 import axios from "axios";
 import Post from "../post/Post";
+import Skeleton from "../skeleton/Skeleton";
 
 function Feed() {
   const [videos, setVideos] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
 
-  const fetchVideos = async (endpoint) => {
+  const fetchVideos = async (url) => {
+    setIsLoading(true);
     try {
-      const res = await axios.get(endpoint);
+      const res = await axios.get(url);
       setVideos(res.data.videos);
-      console.log(res.data.videos);
-    } catch (err) {}
+      setIsLoading(false);
+    } catch (err) {
+      console.log(err);
+    }
   };
 
   useEffect(() => {
@@ -20,9 +25,13 @@ function Feed() {
 
   return (
     <div className="feedContainer">
-      {videos.map((el, i) => {
-        return <Post videos={el} key={i} />;
-      })}
+      {isLoading ? (
+        <Skeleton type="feedSk" />
+      ) : (
+        videos.map((el, i) => {
+          return <Post videos={el} key={i} />;
+        })
+      )}
     </div>
   );
 }

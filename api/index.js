@@ -10,7 +10,9 @@ app.use(cors());
 
 app.get("/api/videos", (req, res) => {
   try {
-    res.status(200).json({ success: true, videos });
+    setTimeout(() => {
+      res.status(200).json({ success: true, videos });
+    }, 3000);
   } catch (err) {
     res.status(500).json({ success: false, msg: err.message });
   }
@@ -18,7 +20,9 @@ app.get("/api/videos", (req, res) => {
 
 app.get("/api/user", (req, res) => {
   try {
-    res.status(200).json({ success: true, user });
+    setTimeout(() => {
+      res.status(200).json({ success: true, user });
+    }, 3000);
   } catch (err) {
     res.status(500).json({ success: false, msg: err.message });
   }

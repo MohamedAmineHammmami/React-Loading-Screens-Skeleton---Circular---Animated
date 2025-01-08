@@ -2,7 +2,7 @@ export const user = {
   id: 1,
   username: "Hammami",
   avatar:
-    "https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+    "https://media.licdn.com/dms/image/v2/D4D03AQGXzd6r8QRZpw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1707862681011?e=1741824000&v=beta&t=fM5oZ66IledwKtvSEAeDx1UeJAYbcss873jVoiE55xA",
 };
 
 export const videos = [
